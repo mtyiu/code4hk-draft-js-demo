@@ -40,7 +40,9 @@ class App extends Component {
   }
 
   render() {
-    const html = draftToHtml( convertToRaw( this.state.editorState.getCurrentContent() ) );
+    const raw = convertToRaw(this.state.editorState.getCurrentContent());
+    const html = draftToHtml(raw);
+    const json = JSON.stringify(raw);
 
     return (
       <div className="App">
@@ -62,6 +64,11 @@ class App extends Component {
               <div className="card-panel grey lighten-4">
                 <h5>HTML:</h5>
                 <pre>{ html }</pre>
+              </div>
+
+              <div className="card-panel grey lighten-2">
+                <h5>Editor state (JSON):</h5>
+                <pre>{ json }</pre>
               </div>
             </div>
           </div>
