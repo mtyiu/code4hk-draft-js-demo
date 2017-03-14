@@ -1,0 +1,24 @@
+{
+  "name": "code4hk-draft-js-demo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "draft-js": "^0.10.0",
+    "draftjs-to-html": "^0.7.0",
+    "es6-promise": "^4.1.0",
+    "isomorphic-fetch": "^2.2.1",
+    "materialize-css": "^0.98.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-draft-wysiwyg": "^1.7.8"
+  },
+  "devDependencies": {
+    "react-scripts": "0.9.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
