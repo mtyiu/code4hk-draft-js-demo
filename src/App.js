@@ -20,7 +20,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('/sample.html')
+    fetch('sample.html')
       .then(response => response.text())
       .then(html => {
         // Convert HTML to editor state
