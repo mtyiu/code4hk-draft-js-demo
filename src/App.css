@@ -9,3 +9,7 @@
   margin-bottom: 20px;
   color: white;
 }
+
+pre {
+  text-align: left;
+}
